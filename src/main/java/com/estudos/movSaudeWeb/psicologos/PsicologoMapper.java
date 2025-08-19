@@ -1,4 +1,4 @@
-package com.estudos.movSaudeWeb.Psicologos;
+package com.estudos.movSaudeWeb.psicologos;
 
 import org.mapstruct.Mapper;
 

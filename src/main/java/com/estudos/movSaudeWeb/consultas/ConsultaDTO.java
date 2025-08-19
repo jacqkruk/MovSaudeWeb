@@ -1,13 +1,14 @@
-package com.estudos.movSaudeWeb.Consultas;
+package com.estudos.movSaudeWeb.consultas;
 
-import com.estudos.movSaudeWeb.Pacientes.PacienteModel;
-import com.estudos.movSaudeWeb.Psicologos.PsicologoModel;
+import com.estudos.movSaudeWeb.pacientes.PacienteDTO;
+import com.estudos.movSaudeWeb.psicologos.PsicologoDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -17,6 +18,6 @@ public class ConsultaDTO {
     private Long id;
     private LocalDate data;
     private LocalTime horario;
-    private PsicologoModel psicologo;
-    private PacienteModel paciente;
+    private PsicologoDTO psicologo;
+    private PacienteDTO paciente;
 }

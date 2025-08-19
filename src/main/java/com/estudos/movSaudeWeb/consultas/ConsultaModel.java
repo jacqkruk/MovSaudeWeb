@@ -1,8 +1,7 @@
-package com.estudos.movSaudeWeb.Consultas;
+package com.estudos.movSaudeWeb.consultas;
 
-import com.estudos.movSaudeWeb.Pacientes.PacienteModel;
-import com.estudos.movSaudeWeb.Psicologos.PsicologoModel;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.estudos.movSaudeWeb.pacientes.PacienteModel;
+import com.estudos.movSaudeWeb.psicologos.PsicologoModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

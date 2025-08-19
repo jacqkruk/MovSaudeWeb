@@ -1,6 +1,6 @@
-package com.estudos.movSaudeWeb.Pacientes;
+package com.estudos.movSaudeWeb.pacientes;
 
-import com.estudos.movSaudeWeb.Consultas.ConsultaModel;
+import com.estudos.movSaudeWeb.consultas.ConsultaModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

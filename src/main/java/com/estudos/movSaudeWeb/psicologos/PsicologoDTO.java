@@ -1,7 +1,7 @@
-package com.estudos.movSaudeWeb.Pacientes;
+package com.estudos.movSaudeWeb.psicologos;
 
-
-import com.estudos.movSaudeWeb.Consultas.ConsultaModel;
+import com.estudos.movSaudeWeb.consultas.ConsultaDTO;
+import com.estudos.movSaudeWeb.consultas.ConsultaModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PacienteDTO {
+public class PsicologoDTO {
 
     private Long id;
     private String nome;
@@ -20,5 +20,6 @@ public class PacienteDTO {
     private String email;
     private String telefone;
     private Date dataNascimento;
-    private List<ConsultaModel> consultas;
+    private String crp;
+    private List<ConsultaDTO> consultas;
 }
