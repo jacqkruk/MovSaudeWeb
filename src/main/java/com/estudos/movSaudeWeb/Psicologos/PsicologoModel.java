@@ -19,7 +19,7 @@ public class PsicologoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "nome")
     private String nome;
@@ -39,7 +39,6 @@ public class PsicologoModel {
     @Column(name = "crp")
     private String crp;
 
-    @OneToMany
-    @JoinColumn(name = "consulta_id")
-    private List<ConsultaModel> consulta;
+    @OneToMany(mappedBy = "psicologo")
+    private List<ConsultaModel> consultas;
 }

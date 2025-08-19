@@ -18,7 +18,7 @@ public class PacienteModel {
 
     @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "nome")
     private String nome;
@@ -35,8 +35,7 @@ public class PacienteModel {
     @Column(name = "data_nascimento")
     private Date dataNascimento;
 
-    @OneToMany
-    @JoinColumn(name = "consulta_id")
-    private List<ConsultaModel> consulta;
+    @OneToMany(mappedBy = "paciente")
+    private List<ConsultaModel> consultas;
 
 }

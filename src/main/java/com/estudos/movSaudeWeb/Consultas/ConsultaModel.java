@@ -21,7 +21,7 @@ public class ConsultaModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "data")
-    private int id;
+    private Long id;
 
     @Column(name = "data")
     private LocalDate data;
@@ -29,11 +29,12 @@ public class ConsultaModel {
     @Column(name = "data")
     private LocalTime horario;
 
-
+    @ManyToOne
+    @JoinColumn(name = "psicologo_id")
     private PsicologoModel psicologo;
 
-    @ManyToOne(mappedBy = "consulta")
-    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "paciente_id")
     private PacienteModel paciente;
 
 }
