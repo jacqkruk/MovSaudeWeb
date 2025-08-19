@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class PacienteDTO {
 
-    private int id;
+    private Long id;
     private String nome;
     private String cpf;
     private String email;
