@@ -6,6 +6,7 @@ import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring", uses = {PacienteMapper.class, PsicologoMapper.class})
 public interface ConsultaMapper {
-    ConsultaDTO toDTO(ConsultaModel model);
-    ConsultaModel toEntity(ConsultaDTO dto);
+    ConsultaDTO map(ConsultaModel model);
+    ConsultaModel map(ConsultaDTO dto);
+
 }

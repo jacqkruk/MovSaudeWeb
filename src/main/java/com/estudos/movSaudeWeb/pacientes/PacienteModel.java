@@ -33,7 +33,7 @@ public class PacienteModel {
     private String telefone;
 
     @Column(name = "data_nascimento")
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
     @OneToMany(mappedBy = "paciente")
     private List<ConsultaModel> consultas;
