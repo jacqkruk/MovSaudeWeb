@@ -19,13 +19,13 @@ public class ConsultaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "data")
+    @Column(name = "id")
     private Long id;
 
     @Column(name = "data")
     private LocalDate data;
 
-    @Column(name = "data")
+    @Column(name = "horario")
     private LocalTime horario;
 
     @ManyToOne
